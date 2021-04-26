@@ -207,7 +207,7 @@ def captcha():
             if see("error"):
                 click(587, 624, 200, 205)
             # Закрытие капчи
-            click(572, 596, 7, 23)
+            click(580, 600, 7, 23)
             # Сброс таймера
             timer = 0
             # Перезагрузка страницы(необходимо добавить)
@@ -220,7 +220,7 @@ def captcha():
                 (see("solve_again_2")) or \
                     (see("solve_again_3")):
             # Закрывает капчу
-            click(587, 624, 5, 10)
+            click(580, 600, 5, 10)
             reload()
             return
 
@@ -406,7 +406,7 @@ def run(cpu):
                     tr_log += 1
                     if tr_log == 40:
                         if see("error"):
-                            click(587, 624, 200, 205)
+                            click(580, 600, 200, 205)
                         click(572, 596, 7, 23)
                         tr_log = 0
                         reload()
@@ -416,7 +416,7 @@ def run(cpu):
                     tr_load += 1
                     if tr_load == 40:
                         if see("error"):
-                            click(587, 624, 200, 205)
+                            click(580, 600, 200, 205)
                         click(572, 596, 7, 23)
                         tr_load = 0
                         reload()
